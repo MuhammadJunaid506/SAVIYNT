@@ -7,7 +7,6 @@ const Item = ({ onUpdateItem, onDeleteItem }) => {
   const [image, setImage] = useState(null);
 
   const handleAddItem = () => {
-    // Check if all required fields are filled
     if (!name || !email || !image) {
       alert('Please fill in all fields');
       return;
@@ -19,10 +18,8 @@ const Item = ({ onUpdateItem, onDeleteItem }) => {
       image,
     };
 
-    // Call the parent component's function to add the new item
     onUpdateItem(newItem);
 
-    // Clear the form fields after adding the item
     setName('');
     setEmail('');
     setImage(null);

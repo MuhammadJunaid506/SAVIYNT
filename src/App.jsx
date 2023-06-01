@@ -51,7 +51,7 @@ function App() {
 
   const handleCreateItem = () => {
     const newItem = {
-      id: 1, // Assign a unique ID for the new item
+      id: 1, 
       name: 'New Item',
       email: 'newitem@example.com',
       image: 'https://example.com/image.jpg',
